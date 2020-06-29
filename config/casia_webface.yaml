@@ -1,0 +1,50 @@
+# Dictionary storing network parameters.
+# Batch size.
+batch_size: 256
+# Number of epochs to train for.
+#100
+num_epochs: 60
+# Learning rate. adam beta1, beta2
+D:
+  lr: 0.0002
+  beta1: 0.5
+  beta2: 0.999
+G:
+  lr: 0.0002
+  beta1: 0.5
+  beta2: 0.999
+
+nb_classes: 10
+
+# After how many epochs to save checkpoints and generate test output.
+save_epoch: 50
+# Dataset to use. Choose from {MNIST, SVHN, CelebA, FashionMNIST}. CASE MUST MATCH EXACTLY!!!!!
+dataset: 'Casia'
+seed: 0
+
+#lambda regularization term
+coeff:
+  con: 0.1
+  dis: 1
+
+var:
+  v1: -2
+  v2: 2
+
+# Set appropriate hyperparameters depending on the dataset used.
+# The values given in the InfoGAN paper are used.
+# num_z : dimension of incompressible noise.
+# num_dis_c : number of discrete latent code used.
+# dis_c_dim : dimension of discrete latent code.
+# num_con_c : number of continuous latent code used.
+
+# 128 noise variables
+num_z: 128
+# c1, latent code(categorical code) --> model discontinuous variation
+num_dis_c: 10
+# categorical dimension, 10 classes, probability is 0.1 --> c1 ~ Cat(K = 10, p = 0.1)
+dis_c_dim: 10
+# c2, c3 continuous codes
+num_con_c: 5
+
+
