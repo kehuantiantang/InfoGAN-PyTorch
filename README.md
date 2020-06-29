@@ -90,7 +90,7 @@ PyTorch implementation of [InfoGAN: Interpretable Representation Learning by Inf
 
   
 
-Edit the *argparse* in **`train.py`** file to select training parameters and the dataset to use.
+Edit the *argparse* in **`[train.py](train.py)`** file to select training parameters and the dataset to use.
 
 ```python
 parser = argparse.ArgumentParser('InfoGAN')
@@ -128,7 +128,7 @@ seed: 0
 
 #lambda regularization term
 coeff:
-	# construction loss
+  # construction loss
   con: 0.1
   # discriminator
   dis: 1
@@ -158,5 +158,8 @@ python3 train.py --dataset mnist --output_folder output
 * **CelebA** - [`CelebA.md`](./README/CelebA.md)
 * **CASIA_webface** - [`CASIA_webface.md`](./README/CASIA_webface.md)
 
-* **Comparision result with $\beta$ - VAE see  *README.md* in $\beta$ - VAE**
+* **Comparision result with β-VAE see  *README.md* in β-VAE**
 
+
+## References
+* [Natsu6767/InfoGAN-PyTorch](https://github.com/Natsu6767/InfoGAN-PyTorch)

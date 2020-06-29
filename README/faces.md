@@ -32,7 +32,9 @@ Because the faces has 5 continuous latent codes, so $v_{0…4}$ represented to c
 
 #### 3.2 Latent code on Faces
 
+
 $ccs00\sim 04$ represented to continuous code $ccs00, …, ccs04$,  $ccs01$ shows the pose, $ccs02$ draws the elevation, lighting can see in $ccs04$.
+
 
 <img width="1000" src="./res/faces/faces_c.png" style="float: left;"/>
 
